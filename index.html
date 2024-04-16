@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular plazo fijo</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+
+        <input type="number" id="monto" placeholder="Monto a invertir">
+        <input type="number" id="dias" placeholder="Cantidad de días">
+        
+        <label for="reinvertir">¿Desea reinvertir el capital al finalizar el plazo?</label>
+        <input type="checkbox" id="reinvertir">
+        
+        <button onclick="calcularPlazoFijo()">Calcular</button>
+        <div id="resultado"></div>
+
+        <div id="errorNombre" class="error"></div>
+        <div id="errorNombreNumero" class="error"></div>
+        <div id="errorMonto" class="error"></div>
+        <div id="errorDias" class="error"></div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
+
